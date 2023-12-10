@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__logo {
+        width: 160px;
+        height: 40px;
+        top: 77px;
+        left: 165px;
+        padding: 0px, 0.05px, 0px, 0px;
+    }
+
+    &__list--icon {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    &__list--link {
+        width: 49px;
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &__list--link:active {
+        color: black;
+    }
+
+    &__button--link {
+        margin-top: 5px;
+        color: #FFFFFF;
+        width: 88px;
+        top: 9px;
+        left: 32px;
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 30px;
+        border: 2px solid white;
+        width: 153px;
+        height: 48px;
+        top: 73px;
+        left: 1122px;
+        border-radius: 40px;
+    }
+
+    &__button--link:active {
+        color: #000;
+        background-color: #fff;
+    }
+
+    &__box {
+        display: none;
+    }
+}
+    @media (max-width:769px) {
+       .header {
+        padding: 20px;
+        padding-top: 20px;
+
+        &__list--icon {
+            margin: -5px;
+            margin-top: 10px;
+        }
+
+        &__box{
+            display: none;
+        }
+       }
+    }
+
+    @media (max-width:376px) {
+        .header {
+
+            &__list--icon {
+                display: none;   
+            }
+
+            &__logo {
+                margin-left: -60px;
+            }
+
+            &__button--link {
+                display: none;
+            }
+
+            &__box {
+                display: block;
+                margin-top: 65px;
+                margin-left: 80px;
+            }
+
+            &__box--item--hr {
+                width: 20px;
+                height: 3px;
+                background-color: #fff;
+                margin-top: -20px;
+            }
+        }
+    }

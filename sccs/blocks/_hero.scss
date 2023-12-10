@@ -1,0 +1,141 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: -100px;
+
+    &__left--head {
+        width: 605px;
+        top: 250px;
+        left: 165px;
+        font-family: Livvic;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: aliceblue;
+        margin-left: 10px;  
+    }
+
+    &__left {
+        display: flex;
+    }
+
+    &__left--img {
+        width: 200px;
+        margin-left: -150px;
+        height: 200px;
+        margin-top: 60px;
+    }
+
+    &__right {
+        margin-top: 300px;
+    }
+
+    &__right--hr {
+        width: 50px;
+        height: 2px;
+        background-color: #79C8C7;
+        border: none;
+        text-align:left;
+        margin-left:0px;
+    }
+
+    &__right--text {
+        width: 445px;
+        top: 83px;
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 50px;
+    }
+
+    &__right--img {
+        position: relative;
+        margin-top: 150px;
+        margin-bottom: -5px;
+    }
+}
+
+@media (max-width:768px) {
+    .hero {
+        flex-direction: column;
+        margin-top: 50px;
+
+
+        &__left--img {
+            display: none;
+        }
+
+        &__right--hr {
+            display: none;
+        }
+
+        &__left--head {
+            width: 350px;
+            font-family: Livvic;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__right--text {
+            width: 457px;
+            top: 136px;
+            left: 110px;    
+            font-family: Livvic;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-top: -330px;
+        }
+
+        &__right--img {
+            margin-left: 60px;
+            margin-top: 250px;
+        }
+    }
+}
+
+@media (max-width:376px) {
+    .hero {
+
+
+        &__left--head {
+            width: 350px;
+            font-family: Livvic;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__right--text {
+            width: 327px;
+            top: 98px;
+            font-family: Livvic;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        &__right--img {
+            margin-left: 10px;
+        }
+
+    }
+}

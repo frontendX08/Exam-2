@@ -1,0 +1,138 @@
+.aside {
+    height: 200px;
+    top: 2129px;
+    background-color: #F67E7E;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -15px;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    &__img {
+        margin-left: -1200px;
+        margin-top: 80px;
+        transform: translateY(120px);
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__head {
+        width: 504px;
+        font-family: Livvic;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #012F34;
+        margin-left: 150px;
+        transform: translateY(-100px);
+    }
+
+    &__link {
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #012F34;
+        padding: 20px;
+        width: 200px;
+        height: 70px;
+        border: 2px;
+        border: 2px solid black;
+        border-radius: 50px;
+        margin-left: 300px;
+    }
+
+    &__span {
+        padding-top: -50px;
+        margin-left: 30px;
+    }
+
+    &__link:active {
+        background-color: #fff;
+        color: #012F34;
+    }
+}
+
+@media (max-width:768px) {
+    .aside {
+        padding: 0 20px;
+        height: 200px;
+        top: 2609px;
+
+    
+        &__head {
+            width: 336px;
+            top: 84px;
+            left: 97px;
+            font-family: Livvic;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        &__link {
+            position: relative;
+            margin-left: 150px;
+            margin-top: -40px;
+        }
+
+        &__img {
+            margin-left: -568px;
+            margin-top: -3px;
+        }
+    }
+}
+
+@media (max-width:376px) {
+    .aside {
+        height: 302px;
+        top: 3050px;
+
+
+        &__box {
+            flex-direction: column;
+            margin-top: -120px;
+        }
+
+        &__head {
+            width: 327px;
+            font-family: Livvic;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        &__link {
+            margin-top: -150px;
+            margin-left: 50px;
+        }
+
+        &__img {
+            margin-left: -180px;
+            width: 200px;
+            height: 150px;
+            top: 180px;
+            margin-top: -70px;
+
+        }
+    }
+}
